@@ -612,14 +612,14 @@
         gap: 45px;
     }
 
-    .footer-contato {
-        grid-column: 1 / -1;
+    .footer-marca {
+        grid-row: span 2;
     }
 }
 
-@media (max-width: 600px) {
-    .footer-tommaior {
-        padding: 55px 0 25px;
+@media (max-width: 650px) {
+    .footer {
+        padding: 60px 0 25px;
     }
 
     .footer-container {
@@ -628,12 +628,17 @@
 
     .footer-principal {
         grid-template-columns: 1fr;
-        gap: 38px;
+        gap: 40px;
         padding-bottom: 40px;
     }
 
+    .footer-marca {
+        grid-row: auto;
+        max-width: 100%;
+    }
+
     .footer-logo img {
-        width: 165px;
+        width: 160px;
     }
 
     .footer-links h3,
@@ -641,13 +646,29 @@
         margin-bottom: 18px;
     }
 
-    .footer-inferior {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
+    .footer-links a {
+        margin-bottom: 13px;
     }
 
-    .footer-inferior p {
+    .footer-inferior {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-container {
+        padding: 0 20px;
+    }
+
+    .footer-marca p,
+    .footer-contato p {
+        font-size: 13px;
+    }
+
+    .footer-inferior p,
+    .footer-voltar {
         font-size: 11px;
     }
 }

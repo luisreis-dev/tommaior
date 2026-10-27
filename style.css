@@ -711,11 +711,11 @@ html {
 
 /* RODAPÉ */
 
-.footer-tommaior {
+.footer {
     width: 100%;
     padding: 75px 0 25px;
-    background-color: #131313;
-    color: #FAF8F5;
+    background-color: #0a0a0a;
+    color: #FFFFFF;
 }
 
 .footer-container {
@@ -727,19 +727,23 @@ html {
 
 .footer-principal {
     display: grid;
-    grid-template-columns: 1.5fr 0.8fr 1fr;
+    grid-template-columns: 1.4fr 0.7fr 1fr;
     gap: 70px;
     padding-bottom: 60px;
 }
 
+.footer-marca {
+    max-width: 340px;
+}
+
 .footer-logo {
     display: inline-block;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
 .footer-logo img {
     display: block;
-    width: 190px;
+    width: 180px;
     max-width: 100%;
     height: auto;
     filter: brightness(0) invert(1);
@@ -747,7 +751,6 @@ html {
 
 .footer-marca p,
 .footer-contato p {
-    max-width: 350px;
     margin: 0;
     color: #BDBDBD;
     font-family: "Inter", sans-serif;
@@ -755,37 +758,32 @@ html {
     line-height: 1.8;
 }
 
+.footer-links,
+.footer-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .footer-links h3,
 .footer-contato h3 {
     margin: 0 0 24px;
     color: #FFFFFF;
     font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 
-.footer-links ul {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.footer-links a,
-.footer-contato > a {
+.footer-links a {
+    margin-bottom: 15px;
     color: #BDBDBD;
     font-family: "Inter", sans-serif;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 13px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-links a:hover,
-.footer-contato > a:hover,
-.footer-voltar:hover {
+.footer-links a:hover {
     color: #FFFFFF;
 }
 
@@ -794,16 +792,26 @@ html {
 }
 
 .footer-contato > a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
     text-decoration: underline;
     text-underline-offset: 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-contato > a:hover {
+    color: #C5CEB9;
 }
 
 .footer-inferior {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
     padding-top: 25px;
     border-top: 1px solid #333333;
@@ -824,4 +832,8 @@ html {
     font-size: 12px;
     text-decoration: none;
     transition: color 0.3s ease;
+}
+
+.footer-voltar:hover {
+    color: #FFFFFF;
 }
