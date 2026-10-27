@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Tom Maior | Escola de Música</title>
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <header class="header" id="header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a href="#inicio" class="navbar-logo" aria-label="Tom Maior - Início">
+          <img
+            src="assets/logo_tommaior.svg"
+            alt="Tom Maior Escola de Música"
+          />
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="navbar-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="navbar-menu" id="navbar-menu">
+          <ul class="navbar-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#nossos-alunos">Nossos Alunos</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+
+          <a href="#contato" class="navbar-cta">
+            Agende uma aula experimental
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SESSÃO HERO -->
+    <section class="hero" id="inicio">
+      <img
+        src="assets/img-hero (2).jpg"
+        alt=""
+        class="hero-image"
+        fetchpriority="high"
+      />
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1>Aprenda música com aulas de piano, violão, violino e flauta</h1>
+
+        <p>
+          Desenvolva seu talento musical com professores dedicados,
+          acompanhamento próximo e aulas que respeitam seu ritmo de aprendizado.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contato" class="hero-button hero-button-primary">
+            Agende sua aula experimental gratuita
+          </a>
+
+          <a href="#quem-somos" class="hero-button hero-button-secondary">
+            Conheça nossa escola
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SESSÃO SOBRE NÓS -->
+    <section class="about-section" id="quem-somos">
+      <div class="about-container">
+        <div class="about-content">
+          <h2>Uma escola de música para desenvolver seu talento</h2>
+
+          <p>
+            Acreditamos que aprender música vai muito além de tocar um
+            instrumento. É descobrir novas formas de expressão, desenvolver
+            habilidades e construir uma relação única com a arte.
+          </p>
+
+          <p>
+            Na Tom Maior, oferecemos aulas de música com acompanhamento próximo
+            e uma abordagem que combina técnica, prática e sensibilidade. Seja
+            para quem deseja aprender música do zero ou aprimorar seus
+            conhecimentos, cada aluno encontra espaço para evoluir no próprio
+            ritmo.
+          </p>
+
+          <p>
+            Nossa equipe de professores acompanha cada etapa dessa jornada,
+            tornando o aprendizado musical uma experiência enriquecedora.
+          </p>
+
+          <a href="#equipe" class="about-link">
+            Conheça nossa equipe
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="about-image">
+          <img
+            src="assets/img-sobre.jpg"
+            alt="Professores e alunos da escola de música Tom Maior"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SESSÃO ALUNOS -->
+    <section id="nossos-alunos" class="alunos-section">
+      <div class="alunos-container">
+        <header class="alunos-header">
+          <h2 class="alunos-titulo">Nossos alunos</h2>
+          <p class="alunos-subtitulo">
+            Cada conquista tem sua história. Acompanhe alguns momentos dos
+            nossos alunos durante sua jornada de aprendizado musical.
+          </p>
+        </header>
+
+        <div class="alunos-carrosseis">
+          <div class="alunos-carrossel" data-carrossel>
+            <button
+              class="alunos-seta alunos-anterior"
+              type="button"
+              aria-label="Imagens anteriores"
+            >
+              &#10094;
+            </button>
+            <div class="alunos-janela">
+              <div class="alunos-trilha">
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-01.jpg"
+                    alt="Aluno aprendendo música"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-02.jpg"
+                    alt="Aluno praticando instrumento"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-03.jpg"
+                    alt="Momento de aprendizado musical"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-04.jpg"
+                    alt="Aluno durante a aula"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-05.jpg"
+                    alt="Prática musical na escola"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              class="alunos-seta alunos-proximo"
+              type="button"
+              aria-label="Próximas imagens"
+            >
+              &#10095;
+            </button>
+          </div>
+
+          <div class="alunos-carrossel" data-carrossel>
+            <button
+              class="alunos-seta alunos-anterior"
+              type="button"
+              aria-label="Imagens anteriores"
+            >
+              &#10094;
+            </button>
+            <div class="alunos-janela">
+              <div class="alunos-trilha">
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-06.jpg"
+                    alt="Aluno em aula de música"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-07.jpg"
+                    alt="Prática de instrumento musical"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-08.jpg"
+                    alt="Aluno desenvolvendo habilidades musicais"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-09.jpg"
+                    alt="Aula na escola de música"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-10.jpg"
+                    alt="Momento de aprendizado"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              class="alunos-seta alunos-proximo"
+              type="button"
+              aria-label="Próximas imagens"
+            >
+              &#10095;
+            </button>
+          </div>
+
+          <div class="alunos-carrossel" data-carrossel>
+            <button
+              class="alunos-seta alunos-anterior"
+              type="button"
+              aria-label="Imagens anteriores"
+            >
+              &#10094;
+            </button>
+            <div class="alunos-janela">
+              <div class="alunos-trilha">
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-11.jpg"
+                    alt="Aluno em momento musical"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-12.jpg"
+                    alt="Aula prática de música"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-13.jpg"
+                    alt="Aluno praticando na escola"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-14.jpg"
+                    alt="Aprendizado de instrumento"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="alunos-imagem">
+                  <img
+                    src="assets/alunos/aluno-15.jpg"
+                    alt="Experiência musical dos alunos"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              class="alunos-seta alunos-proximo"
+              type="button"
+              aria-label="Próximas imagens"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+
+        <div class="alunos-cta">
+          <a href="#contato">Agende uma aula experimental</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section class="avaliacoes-section" id="avaliacoes">
+      <div class="avaliacoes-container">
+        <header class="avaliacoes-header">
+          <h2 class="avaliacoes-titulo">O que dizem nossos alunos</h2>
+          <p class="avaliacoes-subtitulo">
+            Histórias de aprendizado, evolução e paixão pela música.
+          </p>
+        </header>
+
+        <div class="avaliacoes-carrossel" data-avaliacoes>
+          <button
+            class="avaliacoes-seta avaliacoes-anterior"
+            type="button"
+            aria-label="Avaliação anterior"
+          >
+            &#10094;
+          </button>
+
+          <div class="avaliacoes-janela">
+            <div class="avaliacoes-trilha">
+              <article class="avaliacao">
+                <div class="avaliacao-estrelas" aria-label="5 de 5 estrelas">
+                  ★★★★★
+                </div>
+                <p class="avaliacao-texto">
+                  "Uma experiência incrível! Os professores são muito atenciosos
+                  e tornam o aprendizado leve e prazeroso."
+                </p>
+                <div class="avaliacao-autor">
+                  <span class="avaliacao-iniciais">M</span>
+                  <div>
+                    <h3>Mariana S.</h3>
+                    <span>Aluna</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="avaliacao">
+                <div class="avaliacao-estrelas" aria-label="5 de 5 estrelas">
+                  ★★★★★
+                </div>
+                <p class="avaliacao-texto">
+                  "Sempre tive vontade de aprender música e encontrei aqui o
+                  incentivo e o acompanhamento que precisava."
+                </p>
+                <div class="avaliacao-autor">
+                  <span class="avaliacao-iniciais">R</span>
+                  <div>
+                    <h3>Rafael M.</h3>
+                    <span>Aluno</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="avaliacao">
+                <div class="avaliacao-estrelas" aria-label="5 de 5 estrelas">
+                  ★★★★★
+                </div>
+                <p class="avaliacao-texto">
+                  "As aulas são muito bem conduzidas. É gratificante perceber
+                  minha evolução a cada semana."
+                </p>
+                <div class="avaliacao-autor">
+                  <span class="avaliacao-iniciais">C</span>
+                  <div>
+                    <h3>Camila R.</h3>
+                    <span>Aluna</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="avaliacao">
+                <div class="avaliacao-estrelas" aria-label="5 de 5 estrelas">
+                  ★★★★★
+                </div>
+                <p class="avaliacao-texto">
+                  "Ambiente acolhedor, professores excelentes e uma equipe que
+                  realmente se importa com o desenvolvimento dos alunos."
+                </p>
+                <div class="avaliacao-autor">
+                  <span class="avaliacao-iniciais">L</span>
+                  <div>
+                    <h3>Lucas A.</h3>
+                    <span>Aluno</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="avaliacao">
+                <div class="avaliacao-estrelas" aria-label="5 de 5 estrelas">
+                  ★★★★★
+                </div>
+                <p class="avaliacao-texto">
+                  "Aprender música se tornou uma das melhores partes da minha
+                  rotina. Recomendo a escola para quem deseja começar."
+                </p>
+                <div class="avaliacao-autor">
+                  <span class="avaliacao-iniciais">B</span>
+                  <div>
+                    <h3>Beatriz F.</h3>
+                    <span>Aluna</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <button
+            class="avaliacoes-seta avaliacoes-proximo"
+            type="button"
+            aria-label="Próxima avaliação"
+          >
+            &#10095;
+          </button>
+
+          <div class="avaliacoes-paginacao"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-musical" id="contato">
+      <div class="cta-musical-container">
+        <h2 class="cta-musical-titulo">Comece hoje sua jornada musical</h2>
+
+        <p class="cta-musical-texto">
+          Sempre existe um bom momento para aprender algo novo. Agende sua aula
+          experimental gratuita, conheça nossos professores e descubra qual
+          instrumento combina com você.
+        </p>
+
+        <a
+          href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20aula%20experimental%20gratuita%20na%20Tom%20Maior."
+          class="cta-musical-botao"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Agende agora sua aula experimental
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer class="footer-tommaior">
+      <div class="footer-container">
+        <div class="footer-principal">
+          <div class="footer-marca">
+            <a href="#inicio" class="footer-logo">
+              <img
+                src="assets/logo_tommaior.svg"
+                alt="Tom Maior Escola de Música"
+              />
+            </a>
+
+            <p>
+              A música transforma. Encontre seu ritmo, desenvolva seu talento e
+              descubra novas possibilidades com a gente.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Navegação</h3>
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#quem-somos">Quem somos</a></li>
+              <li><a href="#equipe">Nossos professores</a></li>
+              <li><a href="#nossos-alunos">Nossos alunos</a></li>
+              <li><a href="#avaliacoes">Avaliações</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contato">
+            <h3>Entre em contato</h3>
+            <p>
+              Tem vontade de aprender música? Vamos começar essa jornada juntos.
+            </p>
+
+            <a
+              href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20a%20Tom%20Maior."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fale conosco pelo WhatsApp ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-inferior">
+          <p>
+            © <span id="footer-ano"></span> Tom Maior Escola de Música. Todos os
+            direitos reservados.
+          </p>
+
+          <a href="#inicio" class="footer-voltar">Voltar ao topo ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("footer-ano").textContent =
+        new Date().getFullYear();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
